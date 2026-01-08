@@ -67,7 +67,7 @@ const FooterSection = () => {
               onClick={() => {
                 (window as any).dataLayer = (window as any).dataLayer || [];
                 (window as any).dataLayer.push({
-                  event: 'botao_clique',
+                  event: 'cta_footer_click',
                   category: 'footer_section',
                   action: 'clique_cta',
                   label: 'Vem Ser Residente de Elite'
