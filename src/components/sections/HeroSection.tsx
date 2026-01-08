@@ -48,7 +48,16 @@ const HeroSection = () => {
                 size="xl"
                 data-gtm-click="cta_hero"
                 data-gtm-label="Quero Garantir Minha Vaga"
-                onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
+                onClick={() => {
+                  (window as any).dataLayer = (window as any).dataLayer || [];
+                  (window as any).dataLayer.push({
+                    event: 'botao_clique',
+                    category: 'hero_section',
+                    action: 'clique_cta',
+                    label: 'Quero Garantir Minha Vaga'
+                  });
+                  document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' });
+                }}
               >
                 QUERO GARANTIR MINHA VAGA
               </Button>
