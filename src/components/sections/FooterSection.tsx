@@ -62,6 +62,8 @@ const FooterSection = () => {
               variant="cta" 
               size="xl" 
               className="group"
+              data-gtm-click="cta_footer"
+              data-gtm-label="Vem Ser Residente de Elite"
               onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
             >
               VEM SER RESIDENTE DE ELITE

@@ -156,6 +156,9 @@ const PricingSection = () => {
                     variant="pricingCta" 
                     size="lg"
                     className={`mt-auto ${plan.featured ? '' : 'bg-primary hover:bg-primary/90'}`}
+                    data-gtm-click="cta_pricing"
+                    data-gtm-label={plan.title}
+                    data-gtm-plan={plan.highlight || plan.subtitle}
                     onClick={() => handleOpenModal(plan.title, plan.link)}
                   >
                     Quero essa opção
