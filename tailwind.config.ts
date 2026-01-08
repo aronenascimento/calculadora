@@ -57,6 +57,23 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        calculator: {
+          DEFAULT: "hsl(var(--calculator-bg))",
+          button: "hsl(var(--calculator-button))",
+          "button-hover": "hsl(var(--calculator-button-hover))",
+          "button-foreground": "hsl(var(--calculator-button-foreground))",
+          operator: "hsl(var(--calculator-operator))",
+          "operator-hover": "hsl(var(--calculator-operator-hover))",
+          "operator-foreground": "hsl(var(--calculator-operator-foreground))",
+          function: "hsl(var(--calculator-function))",
+          "function-hover": "hsl(var(--calculator-function-hover))",
+          "function-foreground": "hsl(var(--calculator-function-foreground))",
+          display: "hsl(var(--calculator-display))",
+        },
+      },
+      boxShadow: {
+        calculator: "0 25px 50px -12px rgba(0, 0, 0, 0.5)",
+        "calculator-button": "0 4px 6px -1px rgba(0, 0, 0, 0.2)",
       },
       borderRadius: {
         lg: "var(--radius)",
