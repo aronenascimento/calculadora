@@ -46,6 +46,8 @@ const HeroSection = () => {
               <Button 
                 variant="cta" 
                 size="xl"
+                data-gtm-click="cta_hero"
+                data-gtm-label="Quero Garantir Minha Vaga"
                 onClick={() => document.getElementById('planos')?.scrollIntoView({ behavior: 'smooth' })}
               >
                 QUERO GARANTIR MINHA VAGA
