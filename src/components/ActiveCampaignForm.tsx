@@ -602,6 +602,15 @@ const ActiveCampaignForm: React.FC<ActiveCampaignFormProps> = ({ onSuccess, targ
       if (!successHandledRef.current) {
         successHandledRef.current = true;
         
+        // Dispara evento para o GTM
+        (window as any).dataLayer = (window as any).dataLayer || [];
+        (window as any).dataLayer.push({
+          event: 'form_submit_success',
+          category: 'formulario',
+          action: 'envio_sucesso',
+          label: 'ActiveCampaign Form'
+        });
+        
         // Captura os dados do formulário
         const nameInput = formElement.querySelector('#fullname') as HTMLInputElement | null;
         const emailInput = formElement.querySelector('#email') as HTMLInputElement | null;
