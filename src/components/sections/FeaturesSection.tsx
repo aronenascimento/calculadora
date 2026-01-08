@@ -93,7 +93,7 @@ const FeaturesSection = () => {
           onClick={() => {
             (window as any).dataLayer = (window as any).dataLayer || [];
             (window as any).dataLayer.push({
-              event: 'botao_clique',
+              event: 'cta_features_click',
               category: 'features_section',
               action: 'clique_cta',
               label: 'Qual o Melhor Programa Para Mim'

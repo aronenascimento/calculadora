@@ -11,7 +11,7 @@ const PricingSection = () => {
     // Dispara evento para o GTM
     (window as any).dataLayer = (window as any).dataLayer || [];
     (window as any).dataLayer.push({
-      event: 'botao_clique',
+      event: 'cta_pricing_click',
       category: 'pricing_section',
       action: 'clique_cta',
       label: title,

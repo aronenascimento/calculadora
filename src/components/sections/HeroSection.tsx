@@ -51,7 +51,7 @@ const HeroSection = () => {
                 onClick={() => {
                   (window as any).dataLayer = (window as any).dataLayer || [];
                   (window as any).dataLayer.push({
-                    event: 'botao_clique',
+                    event: 'cta_hero_click',
                     category: 'hero_section',
                     action: 'clique_cta',
                     label: 'Quero Garantir Minha Vaga'
