@@ -4,6 +4,19 @@ const IntroSection = () => {
   return (
     <section className="bg-background section-padding">
       <div className="container-narrow">
+        {/* YouTube Video Player - Centralizado e Maior */}
+        <div className="max-w-4xl mx-auto mb-12">
+          <div className="relative w-full rounded-lg overflow-hidden shadow-2xl" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              className="absolute top-0 left-0 w-full h-full"
+              src="https://www.youtube.com/embed/44G2R8EWAF4"
+              title="YouTube video player"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+        </div>
+
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           {/* Text Content */}
           <div>
